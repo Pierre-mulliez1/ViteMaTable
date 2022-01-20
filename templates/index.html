@@ -1,0 +1,25 @@
+
+ <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link href="static/style.CSS" rel="stylesheet" >
+    
+    </head> 
+    <script type=text/javascript src = "static/form_helper.js"  ></script>
+    <body class = "backclr" style = "font-family: Arial, Helvetica, sans-serif;">
+        
+        <form method="POST" action="">
+        <h1 style='color: #f16821; font-style: bold; text-align: center;'> 
+            Welcome to the vite ma table !
+        </h1>
+        <br>
+        <h2 style='color: #f16821; font-style: bold; text-align: center;'> 
+            Insert a restaurant with the form below !
+        </h2>
+    </form>
+
+    <form action="/new" method = "POST">
+        <p>name <input type = "text" name = "name" /></p>
+        <p>type <input type = "integer" name = "type" /></p>
+        <p><input type = "submit" value = "Submit" /></p>
+     </form>
+    </body>

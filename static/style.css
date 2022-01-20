@@ -1,0 +1,55 @@
+/* Main style form */
+/* Form color palette */
+.first-color { 
+	background: #cd4545; 
+}
+.second-color { 
+	background: #f16821; 
+}
+.third-color { 
+	background: #f3a333; 
+}
+.fourth-color { 
+	background: #fffe9a; }
+
+
+/* Selection header style */
+.menutop{
+    background-color: #fffe9a;
+    padding: 1%;
+    overflow: hidden;
+    height: 5%;
+    margin: auto;
+}
+
+.menutop a{
+    font-family: inherit;
+    font-size: 20px;
+    padding: 14px 16px; 
+    text-align:center;
+    text-decoration: none;
+    color: black;
+    float: left;
+    display: block;
+}
+
+.menutop a:hover{
+    background-color: #f3a333;
+}
+
+/* Adapt to screen size */
+@media screen and (max-width: 510px) {
+    .menutop{
+        margin-bottom: 3%;
+        height: 15%
+    }
+    
+    .menutop a {
+    float:none;
+    width: 100%;
+    font-size: 14px;
+    padding: 4px 6px; 
+  }
+  
+}
+
