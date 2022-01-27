@@ -2,11 +2,7 @@
 
 document.write(`
 <div class = "menutop">
-<a href = "http://127.0.0.1:5000/"> Home </a>
-<a href = "">Best restaurants </a>
-<a href = ".html">  </a>
-<a href = ".html">    </a>    
-<a href="" target="_blank">Scan a card</a>
+<a href = "http://localhost:5001/"> Home </a>
+<a href = "http://localhost:5001/insert_rest" style = 'float:right;'>Your restaurant </a>
 </div>
-
 `);

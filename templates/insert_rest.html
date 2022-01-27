@@ -1,9 +1,9 @@
-<!-- Landing page front end  -->
- <head>
+<!-- Insert a restaurant front end  -->
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <link href="static/style.css" rel="stylesheet" >
     </head> 
-
+    
     <script type=text/javascript src = "static/form_helper.js"  ></script>
     <body class = "backclr" style = "font-family: Arial, Helvetica, sans-serif;">
         
@@ -14,3 +14,15 @@
         <br>
        
     </body>
+
+    
+<h2 style='color: #ECD5BB; font-style: bold; text-align: center;'> 
+    Insert a restaurant with the form below !
+</h2>
+</form>
+
+<form action="/new" method = "POST">
+<p>name <input type = "text" name = "name" /></p>
+<p>type <input type = "integer" name = "type" /></p>
+<p><input type = "submit" value = "Submit" /></p>
+</form>

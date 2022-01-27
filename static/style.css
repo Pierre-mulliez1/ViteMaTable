@@ -1,21 +1,30 @@
 /* Main style form */
-/* Form color palette */
+/* Form color palette 
+Serenity
+#54627B
+Champagne
+#ECD5BB
+White
+#FFFFFF
+Crimson
+#710117
+*/
 .first-color { 
-	background: #cd4545; 
+	--backgroundcol: #710117; 
 }
 .second-color { 
-	background: #f16821; 
+	background: #FFFFFF; 
 }
 .third-color { 
-	background: #f3a333; 
+	--backgroundcol2: #ECD5BB; 
 }
 .fourth-color { 
-	background: #fffe9a; }
+	background: #54627B; }
 
 
 /* Selection header style */
 .menutop{
-    background-color: #fffe9a;
+    background-color: var(#710117);
     padding: 1%;
     overflow: hidden;
     height: 5%;
@@ -34,7 +43,7 @@
 }
 
 .menutop a:hover{
-    background-color: #f3a333;
+    background-color: var(--backgroundcol2);
 }
 
 /* Adapt to screen size */

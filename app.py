@@ -32,13 +32,13 @@ def new():
 
 # -
 
-@app.route('/beers')
-def beer():
-    return render_template('beers.html')
+@app.route('/insert_rest')
+def insert_rest():
+    return render_template('insert_rest.html')
 
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=(5000),debug = True)
+    app.run(host='localhost', port=(5001),debug = True)
 
 
 @app.errorhandler(404)
