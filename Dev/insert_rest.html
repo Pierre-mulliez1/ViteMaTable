@@ -5,44 +5,39 @@
     </head> 
     
     <script type=text/javascript src = "form_helper.js"  ></script>
-    <body class = "body">
+   
+<body class = "body">
+
         
-     
-        <h1 class = 'title'> 
-            Welcome to vite ma table !
-        </h1>
-        <br>
-       
-    </body>
+    <h1 class = 'title'> 
+        Welcome to vite ma table !
+    </h1>
 
     <button class ="button_big"  onclick="myPop00();">
         <p id = "textlog">log in</p>
     </button>
-    <div class = "popup" id="windowpop"  style="margin-left: 60%;" >
+
+    <div class = "popup" id="windowpop2"  style="margin-left: 60%;" >
         <span class="popuptext_logs" id="myPopup00">
             <form action="" method="">
-                <h5>Your username:</h5> <input type="text" name = "IA_name">
-                <h5>Your password:</h5> <input type="text" id= "IA_process">
+                <h5>Your username:</h5> <input type="text" name = "rest_name">
+                <h5>Your password:</h5> <input type="text" id= "rest_process">
              </form>
              <button onclick="">Sign in</button>
              <button onclick="myPop00()">cancel </button>
         </span>
-        <script>function myPop00() {
-            var popup = document.getElementById("myPopup00");
-            if ( popup.classList.toggle === 'hide'){
-            popup.classList.toggle("show");}
-            else { popup.classList.toggle("show");}
-          }
-          </script>
+       
         </div>
 
-<h2 class = 'title'> 
-    Insert a restaurant with the form below !
-</h2>
-</form>
+    <h2 class = 'title'> 
+        Insert a restaurant with the form below !
+    </h2>
+    </form>
 
-<form action="/new" method = "POST" class = "container_form">
-<p>Name <input type = "text" name = "name" /></p>
-<p>Type <input type = "integer" name = "type" /></p>
-<p><input type = "submit" value = "Submit" /></p>
-</form>
+    <form action="/new" method = "POST" class = "container_form">
+    <p>Name <input type = "text" name = "name" /></p>
+    <p>Type <input type = "integer" name = "type" /></p>
+    <p><input type = "submit" value = "Submit" /></p>
+    </form>
+
+</body>

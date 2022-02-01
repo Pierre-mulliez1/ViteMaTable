@@ -8,24 +8,32 @@ document.write(`
 </div>
 
 <div class = "popup" id="windowpop"  style="margin-left: 20%;width:60%" >
-<span class="popuptext_logs" id="myPoplog">
+<div class="popuptext_logs" id="myPoplog">
     <form action="" method="">
         <h5>Your username:</h5> <input type="text" name = "IA_name">
         <h5>Your password:</h5> <input type="text" id= "IA_process">
      </form>
      <button onclick="">Sign in</button>
-     <button onclick="myPop00()">cancel </button>
-</span>
-<script>function myPoplog() {
+     <button onclick="myPoplog()">cancel </button>
+</div>
+</div>
+`);
+
+function myPoplog() {
     var popup = document.getElementById("myPoplog");
+    if ( popup.classList.toggle === 'hide'){
+    popup.classList.toggle("show");
+    popup.classList.remove("max-height");}
+    else { popup.classList.toggle("show");popup.classList.remove("max-height");}
+  }
+
+  function myPop00() {
+    var popup = document.getElementById("myPopup00");
     if ( popup.classList.toggle === 'hide'){
     popup.classList.toggle("show");}
     else { popup.classList.toggle("show");}
   }
-  </script>
-</div>
-`);
-
+  
 function loginout(){
     const img = document.querySelector('photo_avatar');
     if (document.querySelector("#textlog").innerHTML == "log in")
