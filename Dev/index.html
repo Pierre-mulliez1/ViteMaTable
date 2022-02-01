@@ -8,18 +8,35 @@
 <script type=text/javascript src = "form_helper.js"  ></script>
 
 <body class = "body">
-    <h1 class = 'title'> 
-        Welcome to vite ma table !
-    </h1>
-
-    <br>
-
+    <div class = 'searchbar'>
+        <h1 class = 'title'> 
+            Welcome to vite ma table !
+        </h1>
+        
+        <input>
+        <button>Search</button>
+        </div>
+      
+        <div class = "popup" id="windowpop" style="margin-left:40%" >
+            <span class="popuptext_logs" id="myPopup00">
+                <h4>This restaurant is full ! <br> Notify me when a place is available ?</h4>  
+                <button>Notify me</button>
+                 <button onclick="myPop00()">cancel </button>
+            </span>
+            <script>function myPop00() {
+                var popup = document.getElementById("myPopup00");
+                if ( popup.classList.toggle === 'hide'){
+                popup.classList.toggle("show");}
+                else { popup.classList.toggle("show");}
+              }
+              </script>
+            </div>
     <!-- Generate restaurant list  -->
         <div class= 'right'>
             <div class = 'container_rest'>
                 <p>The fork</p>
                 <img src="pictures/fork.png" alt="logo" >
-            <button>Book now</button> 
+            <button onclick="myPop00();">Book now</button> 
             </div>
         </div>
         <div class= 'right'>
